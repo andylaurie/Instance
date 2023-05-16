@@ -1,0 +1,269 @@
+/* - - ACCOUNT SETTINGS - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.detailId {
+    visibility: hidden;
+}
+
+/* - - OBJECT CONTENT SECTIONS - - - - - - - - - - - - - - - - - - - - - - - */
+
+.hPad {
+    height: 5px;
+}
+
+.och, .ocb {
+    display: flex;
+    flex-direction: row;
+}
+.och h5 {
+    color: #aaa;
+    font-size: 14px;
+    font-weight: normal;
+}
+.ocb h6 {
+    font-size: 14px;
+    font-weight: normal;
+}
+.ocb a {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #000;
+}
+.ocb a:hover {
+    background: #e5e5e5;
+}
+
+/* - - OBJECT SUB SECTIONS - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.osu, .osl, .osh, .oso, .flexRow, .osl form {
+    display: flex;
+}
+
+.osl input, .osu input, .osl select {
+    flex: 0 0 auto;
+    font-size: 14px;
+    border: solid 0px;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 0px;
+    box-shadow: 1px 1px 2px #ccc inset;
+}
+.osl input, .osu input {
+    height: 26px;
+}
+.osl select {
+    height: 26px;
+}
+
+.osu {
+    padding-bottom: 5px;
+}
+
+.osl {
+    padding-top: 5px;
+}
+
+.ocb div, .osu div, .osl div, .osh div, .oso div {
+    width: 5px;
+}
+
+.osu h5, .osl h5 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+    margin-top: 5px;
+    padding: 0px 5px;
+}
+.osl h6 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.oso h5 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #ddd;
+    line-height: 26px;
+    padding: 0px 5px;
+}
+
+.oso button, .osu button, .osl button, .osl a, .osh a {
+    font-size: 14px;
+    height: 26px;
+    padding: 0px 10px;
+    border: solid 0px;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 500;
+    background: transparent;
+    text-decoration: none;
+    line-height: 26px;
+}
+.osl a.disabled {
+    color: #bbb;
+}
+.oso button:hover, .osu button:hover, .osl button:hover, .osl a:hover,
+.osh a:hover {
+    background: #999999;
+    cursor: pointer;
+}
+
+.noPoint:hover {
+    cursor: default;
+}
+.checkspan {
+    padding: 0 29px;
+}
+
+#formBookIn, #formStockUpdate, #formUpdatePassword, #formUserUpdate {
+    margin-top: -10px;
+}
+input#boxID {
+    color: #aaa;
+}
+
+.pageNote {
+    margin: 10px 25px 0px 25px;
+}
+
+.osu .greyH5 {
+    color: #ddd;
+}
+/* - - IMPORT BUTTON - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+input#import {
+    margin: 0px;
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+
+::-ms-browse {
+    font-size: 14px;
+    height: 26px;
+    padding: 0px 10px;
+    border: solid 0px;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 500;
+    background: transparent;
+    text-decoration: none;
+    line-height: 26px;
+}
+::-ms-browse:hover {
+    background: #999999;
+    cursor: pointer;
+}
+
+::-webkit-file-upload-button {
+    font-size: 14px;
+    height: 26px;
+    padding: 0px 10px;
+    border: solid 0px;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 500;
+    background: transparent;
+    text-decoration: none;
+    line-height: 26px;
+}
+::-webkit-file-upload-button:hover {
+    background: #999999;
+    cursor: pointer;
+}
+
+/* - - SUB SECTION WIDTHS - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.numberOfCopies {
+    width: 150px;
+}
+.labelType {
+    width: 120px;
+}
+
+#partNumber, .partNumber {
+    width: 160px;
+}
+
+#description, .description {
+    width: 380px;
+}
+#descriptionShort, .descriptionShort {
+    width: 300px;
+}
+#boxQty, .boxQty {
+    width: 85px;
+}
+.rackSelect{
+    width: 115px;
+}
+#binNumber,.binNumber, #rackNumber, .rackNumber {
+    width: 80px;
+}
+#rackSelect {
+    width: 125px;
+}
+#qty, .qty {
+    width: 85px;
+}
+#dateRec, .dateRec {
+    width: 140px;
+}
+#boxID, .boxID {
+    width: 80px;
+}
+#modelNumber, .modelNumber {
+    width: 160px;
+}
+#supplyVoltage, .supplyVoltage {
+    width: 120px;
+}
+#ratedInput, .ratedInput {
+    width: 120px;
+}
+#serailNumber, .serialNumber {
+    width: 100px;
+}
+#qtyPer, .qtyPer {
+    width: 100px;
+}
+#giveTo, .giveTo {
+    width: 100px;
+}
+#groupTo, .groupTo {
+    width: 250px;
+}
+/* - - USER ACCOUNTS - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+#username, .username {
+    width: 130px;
+}
+#department, .department {
+    width: 130px;
+}
+#access, .access {
+    width: 110px;
+}
+#password, .password {
+    width: 180px;
+}
+#enabled {
+    box-shadow: none;
+}
+.enabled {
+    width: 60px;
+}
+
+.time {
+    width: 220px;
+}
+.user {
+    width: 100px;
+}
+.action {
+    width: 800px;
+}

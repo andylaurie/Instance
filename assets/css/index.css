@@ -1,0 +1,322 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    letter-spacing: 1px;
+}
+@font-face {
+    font-family: 'kohinoor_banglaregular';
+    src: url('../fonts/kohinoorbangla-regular-webfont.woff2') format('woff2'),
+         url('../fonts/kohinoorbangla-regular-webfont.woff') format('woff'),
+         url('../fonts/kohinoorbangla-regular-webfont.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body {
+    background: radial-gradient(#eee, #ddd);
+    min-width: 1215px;
+    font-size: 14px;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+button {
+    border: none;
+    margin: 0;
+    letter-spacing: 1px;
+}
+p {
+    padding: 0px 10px;
+}
+form {
+    padding: 0px;
+    margin: 0px;
+}
+
+#svrAdd {
+    display: none;
+}
+
+/* - - BASE CONTAINER - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.baseContainer {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* - - NAV CONTAINER - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#navBarContainer {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    padding-top: 38px;
+}
+
+.navBar {
+    background: #404040;
+    height: calc(100vh - 38px);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 2px #888;
+    overflow-y: scroll;
+    letter-spacing: 1px;
+}
+.navTopGroup {
+    flex-grow: 1;
+    padding-top: 3px;
+}
+.navBottomGroup {
+}
+.titleBar {
+    width: 100vw;
+    height: 38px;
+    border-bottom: 1px solid #505050;
+    background: linear-gradient(0deg, #2670bf, #3d84d1);
+    padding: 0 10px;
+    letter-spacing: 2px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    margin-bottom: -38px;
+    z-index: 1;
+    box-shadow: 1px 1px 2px #222;
+}
+#bannerLogo {
+    height: 38px;
+}
+.logoTitle {
+    width: 190px;
+    font-weight: 300;
+}
+.pageTitle {
+    font-family: "kohinoor_banglaregular";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 40px;
+    width: calc(100% - 376px);
+    padding-left: 10px;
+}
+.userAccount {
+    width: 30px;
+}
+.userAccount a {
+    display: block;
+}
+#accountIcon {
+    height: 26px;
+    padding-top: 7px;
+}
+.userTitle {
+    font-family: "kohinoor_banglaregular";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 40px;
+    width: 120px;
+    text-align: right;
+    padding-right: 10px;
+}
+.userTitle a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+.navTopLink {
+    background: #404040;
+    border-bottom: 1px solid #505050;
+    width: 200px;
+    height: 38px;
+    font-size: 14px;
+    line-height: 38px;
+    color: #fff;
+}
+.navTopLink a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding-left: 10px;
+}
+.navSubLink {
+    background: #505050;
+    border-bottom: 1px solid #606060;
+    width: 200px;
+    height: 38px;
+    font-size: 14px;
+    line-height: 38px;
+    color: #fff;
+}
+.navSubLink a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding-left: 18px;
+}
+.navLinkSpace {
+    background: #404040;
+    border-bottom: 1px solid #505050;
+    width: 200px;
+    height: 15px;
+}
+.navLogoutLink {
+    background: #404040;
+    border-top: 1px solid #505050;
+    width: 200px;
+    height: 38px;
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 38px;
+}
+.navLogoutLink a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding-left: 10px;
+}
+.navTopLink:hover {
+    background: #454545;
+    cursor: pointer;
+}
+.navSubLink:hover {
+    background: #555555;
+    /*background: linear-gradient(0deg, /*#, #3d84d1,*/ #1e5a9c, #2670bf);*/
+    /*background: #1e5a9c;*/
+    cursor: pointer;
+}
+.navLogoutLink:hover {
+    background: #454545;
+    cursor: pointer;
+}
+
+
+/* - - MAIN CONTAINER - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#mainViewContainer {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+
+}
+
+.mainContentLoader {
+    min-height: calc(100% - 49px);
+}
+
+
+/* - - HEADER - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.pageHeaderContainer {
+    padding: 5px;
+    height: 26px;
+    background-color: #404040;
+}
+.pageHeaderContainer h2 {
+    padding-left: 20px;
+    color: #fff;
+}
+
+.logOutButton {
+    background: transparent;
+    border: none;
+    vertical-align: middle;
+}
+
+/* - - DASHBOARD - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.dashboardHeadSpace {
+    height: 39px;
+    margin-bottom: 10px;
+}
+
+
+/* - - FOOTER - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.footerDetail {
+    font-family: "kohinoor_banglaregular";
+    margin-top: 10px;
+    border-top: 1px solid #aaa;
+    text-align: center;
+    color: #888;
+    height: 38px;
+    font-size: 14px;
+    line-height: 38px;
+    letter-spacing: 2px;
+}
+
+/* - - PAGE CONTAINERS - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.objectContainer {
+    background-color: #696969;
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px #999;
+}
+.objectContainer h3 {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin: 5px 0px;
+    color: #fff;
+}
+
+.sectionContainer {
+    background-color: #858585;
+    padding: 5px;
+    border-radius: 4px;
+}
+.sectionContainer h4 {
+    padding-left: 5px;
+    padding-bottom: 5px;
+    margin: 5px 0px;
+    color: #fff;
+}
+
+.contentContainer {
+    background-color: #858585;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 2px;
+    flex-direction: column;
+    box-shadow: 1px 1px 2px #ccc inset;
+}
+
+/* - - PAGE LINKS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+.pageLinkBar {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.pageLink {
+    background-color: #696969;
+    margin: 0 0 0 10px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px #999;
+    color: #fff;
+}
+.pageLink a {
+    color: #fff;
+    text-decoration: none;
+}
+.pageLink:hover {
+    background-color: #858585;
+}
+
+/* - - PAGE NOT FOUND - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#notFound {
+    width: calc(100% - 200px);
+    padding: 100px;
+    text-align: center;
+}

@@ -1,0 +1,90 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height; 100%;
+}
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+}
+body {
+    background: radial-gradient(#eee, #ddd);
+    font-size: 14px;
+    min-width: 720px;
+    height: calc(100vh -0%);
+}
+
+h2, h3, h4 {
+    margin: 0;
+}
+
+
+/* LOGIN FORM */
+.loginBaseContainer {
+    height: 100vh;
+}
+
+.loginFormContainer {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#loginForm {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#loginForm h3 {
+    letter-spacing: 5px;
+    margin-bottom: 0px;
+    padding-left: 5px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 40px;
+    color: #3d84d1;
+    background: -webkit-linear-gradient(#2670bf, #3d84d1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#loginLogo {
+    width: 210px;
+}
+#loginForm p {
+    padding: 0;
+}
+#loginForm #loginUsername, #loginForm #loginPassword {
+    width: 300px;
+    height: 35px;
+    margin-top: 5px;
+    padding-left: 10px;
+    border: 0px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 350;
+    border-radius: 4px;
+}
+#loginUsername, #loginPassword {
+    box-shadow: 1px 1px 2px #ccc inset;
+}
+#loginForm button {
+    width: 100px;
+    height: 38px;
+    color: #fff;
+    background: linear-gradient(0deg, #2670bf, #3d84d1);
+    border: none;
+    margin-top: 20px;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px #444;
+}
+#loginForm button:hover {
+    cursor: pointer;
+}
+.loginError {
+    color: #d40f0f;
+    width: auto;
+    text-align: center;
+}
